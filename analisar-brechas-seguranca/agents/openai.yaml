@@ -1,4 +1,0 @@
-interface:
-  display_name: "Analisar Brechas de Segurança"
-  short_description: "Auditoria de segurança e LGPD em código"
-  default_prompt: "Analise as brechas de segurança do projeto informado e gere um relatório técnico priorizado."

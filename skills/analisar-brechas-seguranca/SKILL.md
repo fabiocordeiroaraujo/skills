@@ -1,13 +1,13 @@
 ---
 name: analisar-brechas-seguranca
-description: Analise segurança de um projeto, módulo ou repositório e produza relatório técnico em Markdown com vulnerabilidades exploráveis, riscos de dados sensíveis, exposição LGPD, OWASP, autenticação, autorização, configurações, dependências, logs, pipelines e recomendações priorizadas. Use quando o usuário pedir auditoria, revisão, análise de brechas, hardening, vazamento de dados, segurança ofensiva/defensiva ou equivalente para um código/projeto.
+description: Audite a segurança de um projeto, módulo ou repositório e produza relatório técnico em Markdown com vulnerabilidades exploráveis, riscos de dados sensíveis, exposição LGPD, OWASP, autenticação, autorização, configurações, dependências, logs, pipelines e recomendações priorizadas. Use quando o usuário pedir auditoria, revisão, análise de brechas, hardening, vazamento de dados, segurança ofensiva/defensiva ou equivalente para código ou configuração.
 ---
 
 # Analisar Brechas de Segurança
 
 ## Objetivo
 
-Atuar como analista de segurança ofensiva, defensiva e de proteção de dados sensíveis. Examinar o projeto informado e produzir um relatório técnico completo, acionável e sustentado por evidências locais.
+Atuar como analista de segurança ofensiva, defensiva e de proteção de dados sensíveis. Examinar o alvo informado e produzir um relatório técnico completo, acionável e sustentado por evidências locais.
 
 Nunca inventar vulnerabilidades. Separar achados em `Confirmado`, `Provável` e `Ponto de atenção`. Não incluir payloads ofensivos detalhados nem exploração passo a passo. Se encontrar secrets ou dados sensíveis reais, mascarar o valor e citar apenas tipo e localização.
 
@@ -38,7 +38,7 @@ Se a evidência for insuficiente, registrar como ponto de atenção e explicar c
 
 ## Buscas Recomendadas
 
-Usar `rg` e inspeção de arquivos para localizar padrões como:
+Usar as ferramentas de busca e leitura disponíveis no agente. Quando houver acesso a shell, preferir `rg` para localizar padrões como:
 
 - entradas externas: routes, controllers, handlers, forms, webhooks, consumers, schedulers, CLIs;
 - autenticação e autorização: guards, filters, middleware, roles, scopes, claims, tenants, ownership;
