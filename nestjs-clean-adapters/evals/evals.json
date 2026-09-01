@@ -1,0 +1,29 @@
+{
+  "skill_name": "nestjs-clean-adapters",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Implemente PrismaAppointmentRepository para a porta AppointmentRepository. Preciso de findById, save e list paginado por status/data, com ordenacao segura. A entidade usa camelCase e a tabela usa snake_case.",
+      "expected_output": "Repositorio implements porta, mapper bidirecional, filtros tipados/allowlist, sem vazamento Prisma e testes adequados.",
+      "files": [],
+      "expectations": [
+        "O adapter declara implements AppointmentRepository.",
+        "Um mapper isola camelCase e snake_case.",
+        "A ordenacao usa allowlist, nao uma coluna arbitraria.",
+        "Falhas tecnicas nao sao convertidas silenciosamente em ausencia."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Crie um adaptador TwilioSmsGateway para a interface SmsGateway do core. O client precisa de timeout, logs sem telefone completo e deve traduzir a resposta para SmsSendResult. Inclua testes com client fake.",
+      "expected_output": "Gateway isolando SDK/config/logs, implementando a porta e testado sem rede.",
+      "files": [],
+      "expectations": [
+        "O SDK e ConfigService aparecem apenas no adaptador.",
+        "O retorno externo e mapeado para tipo do core.",
+        "Logs mascaram o telefone e nao incluem credenciais.",
+        "Testes cobrem sucesso, timeout e erro do provider."
+      ]
+    }
+  ]
+}

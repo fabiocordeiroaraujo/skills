@@ -1,0 +1,29 @@
+{
+  "skill_name": "nestjs-clean-core",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Crie no core o caso de uso RegisterDeviceToken. Um CPF pode ter varios tokens, mas o mesmo token nao pode ser duplicado para o mesmo app. Nao implemente banco nem controller; quero contratos e testes unitarios.",
+      "expected_output": "Core puro com input tipado, entidade/VO se necessario, porta minima, token runtime neutro, caso de uso e testes diretos.",
+      "files": [],
+      "expectations": [
+        "Nao ha import de @nestjs nem @prisma/client no core.",
+        "O repository contract e definido a partir das consultas/escritas do caso de uso.",
+        "O caso de uso recebe a porta pelo construtor.",
+        "Os testes cobrem duplicidade e ausencia de escrita nesse caminho."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Revise src/app/core/orders: os usecases recebem PrismaService, lancam BadRequestException e aceitam CreateOrderHttpDto. Aponte os problemas e proponha a migracao mantendo compatibilidade.",
+      "expected_output": "Diagnostico pela regra de dependencia e migracao incremental para portas, input de aplicacao e erros neutros.",
+      "files": [],
+      "expectations": [
+        "Identifica os tres vazamentos: Prisma, excecao HTTP e DTO de transporte.",
+        "Propoe interfaces pertencentes ao core e binding externo.",
+        "Mantem traducao HTTP fora do caso de uso.",
+        "Nao exige uma reescrita total para iniciar a migracao."
+      ]
+    }
+  ]
+}

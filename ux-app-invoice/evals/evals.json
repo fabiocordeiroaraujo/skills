@@ -1,0 +1,17 @@
+{
+  "skill_name": "ux-app-invoice",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Adapte a app Invoice de frontend/ para criar e imprimir uma segunda via de cobranca escolar com itens, desconto e total retornado pela API.",
+      "expected_output": "A solucao reutiliza lista/detalhe/FormArray/print, usa contratos e forms tipados, trata o backend como autoridade financeira e cobre loading, erro, idempotencia e mobile.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Transforme a exclusao de invoice em cancelamento de cobranca, exibindo impacto e impedindo clique repetido.",
+      "expected_output": "A solucao troca delete generico por comando de dominio autorizado/idempotente, usa modal acessivel e loading, preserva auditoria/correlacao e atualiza status sem depender apenas de cor.",
+      "files": []
+    }
+  ]
+}

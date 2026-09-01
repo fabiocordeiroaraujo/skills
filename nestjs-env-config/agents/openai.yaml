@@ -1,0 +1,4 @@
+interface:
+  display_name: "NestJS Env Config"
+  short_description: "Configuracao tipada de ambiente NestJS"
+  default_prompt: "Use $nestjs-env-config to add validated environment variables to this NestJS backend."

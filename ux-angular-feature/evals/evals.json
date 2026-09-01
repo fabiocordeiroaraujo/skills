@@ -1,0 +1,17 @@
+{
+  "skill_name": "ux-angular-feature",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Implemente uma feature de chamada escolar em frontend/ integrada a API, com rascunho, envio idempotente e visual UX.",
+      "expected_output": "A solucao cria feature lazy com page/components/data-access/modelos tipados, separa DTO de view model, trata estados offline/sync/conflito e reutiliza os layouts/componentes UX.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Transforme a tela demo de contatos em uma feature Haggyo de pessoas, removendo os mocks e conectando HttpClient.",
+      "expected_output": "A solucao preserva apenas composicoes visuais uteis, move o codigo para features/people, cria client/facade tipados, registra lazy route e nao promove DataLayerService nem dados demo.",
+      "files": []
+    }
+  ]
+}

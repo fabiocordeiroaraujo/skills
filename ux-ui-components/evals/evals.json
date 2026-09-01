@@ -1,0 +1,17 @@
+{
+  "skill_name": "ux-ui-components",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Implemente no frontend/ uma tabela de alunos com busca, ordenacao, paginacao, loading, vazio e erro usando os componentes ja presentes no catalogo UX.",
+      "expected_output": "A solucao usa card/table/ngb-pagination e estado tipado da feature, corrige acessibilidade da ordenacao, cancela buscas antigas e oferece adaptacao mobile.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Crie um modal para confirmar o cancelamento de uma matricula e bloqueie cliques repetidos enquanto a API responde.",
+      "expected_output": "A solucao usa NgbModal e btn-loading, descreve impacto, gerencia foco e labels, usa acao danger apenas na confirmacao e trata sucesso/erro sem dados sensiveis em logs.",
+      "files": []
+    }
+  ]
+}

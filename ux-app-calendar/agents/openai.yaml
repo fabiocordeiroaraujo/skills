@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX App Calendar"
+  short_description: "Calendarios, eventos e agendas"
+  default_prompt: "Use $ux-app-calendar para adaptar o padrao Calendar a esta agenda do Haggyo."

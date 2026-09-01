@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX Visual Language"
+  short_description: "Linguagem visual UX para o Haggyo"
+  default_prompt: "Use $ux-visual-language para manter esta interface Angular coerente com o visual UX do Haggyo."

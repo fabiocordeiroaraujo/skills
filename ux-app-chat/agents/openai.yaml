@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX App Chat"
+  short_description: "Conversas e mensagens em tempo real"
+  default_prompt: "Use $ux-app-chat para adaptar o padrao Chat a esta jornada conversacional do Haggyo."

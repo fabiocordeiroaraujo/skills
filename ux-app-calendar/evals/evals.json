@@ -1,0 +1,17 @@
+{
+  "skill_name": "ux-app-calendar",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Adapte o Calendar de frontend/ para o calendario academico por unidade, com feriados, provas e aulas nas views mes e semana.",
+      "expected_output": "A solucao reutiliza toolbar/views/dialog, separa modelo de dominio do CalendarEvent, consulta intervalo visivel, respeita data civil/fuso/permissao e fornece alternativa textual.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Ao arrastar uma aula no calendario a API pode retornar conflito de sala. Implemente o comportamento correto.",
+      "expected_output": "A solucao captura snapshot, envia comando versionado, aplica resposta oficial ou rollback em conflito, comunica o erro e desabilita drag quando estado/permissao nao permitem.",
+      "files": []
+    }
+  ]
+}

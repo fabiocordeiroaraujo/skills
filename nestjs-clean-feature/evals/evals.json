@@ -1,0 +1,31 @@
+{
+  "skill_name": "nestjs-clean-feature",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "No backend NestJS com pastas src/app/core, database, api e infra/modules, implemente uma feature de lembretes com POST /reminders e GET /reminders/:id. O lembrete tem id, titulo, destinatario e data de envio; nao pode ser criado no passado. Use Prisma e mantenha a feature desacoplada por interfaces.",
+      "expected_output": "Fatia vertical com entidade/regra, porta, casos de uso, mapper/repository Prisma, DTO/controller, modulo de composicao e testes focados.",
+      "files": [],
+      "expectations": [
+        "O core nao importa NestJS, Prisma nem DTO de transporte.",
+        "O caso de uso depende de uma interface e possui teste unitario sem TestingModule.",
+        "O repositorio implementa a porta e converte persistencia por mapper.",
+        "O modulo liga um token runtime ao adaptador e monta o caso de uso.",
+        "A validacao de data passada nao fica no controller nem no repository."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Refatore o modulo de cobranca: hoje BillingController injeta PrismaService, cria invoice e publica na fila diretamente. Quero o mesmo fluxo REST, mas com Clean Architecture, transacao na criacao e possibilidade de trocar a fila sem mudar a regra.",
+      "expected_output": "Refatoracao em caso de uso transacional, portas de repositorio/fila, adaptadores e controller fino, preservando o contrato REST.",
+      "files": [],
+      "expectations": [
+        "O controller deixa de coordenar Prisma e fila.",
+        "As capacidades de persistencia e fila sao portas distintas do core.",
+        "A transacao e modelada sem expor tipos Prisma no core.",
+        "A composicao concreta fica no modulo NestJS.",
+        "A resposta explica o risco de publicar evento dentro de transacao ou considera outbox."
+      ]
+    }
+  ]
+}

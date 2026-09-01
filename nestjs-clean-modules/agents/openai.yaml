@@ -1,0 +1,4 @@
+interface:
+  display_name: "Modules NestJS Clean"
+  short_description: "Composition root e interfaces no NestJS"
+  default_prompt: "Use $nestjs-clean-modules para montar providers, tokens, rotas e controllers sem acoplar o core ao NestJS."

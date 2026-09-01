@@ -1,0 +1,4 @@
+interface:
+  display_name: "Core NestJS Clean"
+  short_description: "Domínio, portas e casos de uso puros"
+  default_prompt: "Use $nestjs-clean-core para criar ou revisar domínio, contratos e casos de uso independentes de framework."

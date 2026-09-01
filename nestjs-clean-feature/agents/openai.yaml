@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feature NestJS Clean"
+  short_description: "Implementar feature Clean Architecture"
+  default_prompt: "Use $nestjs-clean-feature para implementar uma feature vertical completa e desacoplada neste backend NestJS."

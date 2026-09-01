@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX Layouts & Navigation"
+  short_description: "Paginas, shells e navegacao UX"
+  default_prompt: "Use $ux-layouts-navigation para integrar esta pagina ao layout e a navegacao UX do Haggyo."

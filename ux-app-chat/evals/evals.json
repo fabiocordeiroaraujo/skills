@@ -1,0 +1,17 @@
+{
+  "skill_name": "ux-app-chat",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Adapte o Chat de frontend/ para conversas entre responsavel e secretaria com historico paginado e atualizacao WebSocket.",
+      "expected_output": "A solucao preserva sidebar/historico/composer, separa HTTP/realtime/facade, usa IDs e estados tipados, deduplica reconnect e aplica permissao, horario e privacidade.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Corrija o composer do chat: Enter esta enviando duas vezes e mensagens falhas somem da tela.",
+      "expected_output": "A solucao centraliza submit, define Enter/Shift+Enter, usa clientMessageId, estados pending/failed/retry e evita duplicacao no backend e na reconciliacao realtime.",
+      "files": []
+    }
+  ]
+}

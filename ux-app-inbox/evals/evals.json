@@ -1,0 +1,17 @@
+{
+  "skill_name": "ux-app-inbox",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Adapte a Inbox de frontend/ para uma central de comunicados com nao lidos, lista paginada, detalhe e compose segmentado por turma.",
+      "expected_output": "A solucao preserva o master-detail responsivo, usa modelos/facade tipados, renderizacao segura, estados completos e valida publico/permissao/idempotencia.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Corrija a tela de mensagens que usa innerHTML e links href=# para responder e excluir.",
+      "expected_output": "A solucao define renderer seguro para o corpo, troca links por botoes acessiveis e integra comandos reais com confirmacao, permissoes e tratamento de erro.",
+      "files": []
+    }
+  ]
+}

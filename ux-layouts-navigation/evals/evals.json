@@ -1,0 +1,17 @@
+{
+  "skill_name": "ux-layouts-navigation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Adicione uma pagina autenticada de frequencia diaria em frontend/, com rota lazy e item no menu Academico, mantendo o layout UX atual.",
+      "expected_output": "A pagina usa o shell autenticado, scaffold de breadcrumb/grid/card, rota de feature lazy e menu compativel com permissoes, sem duplicar header/sidebar.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "A nova pagina de recuperacao de acesso esta aparecendo com a sidebar administrativa. Corrija o roteamento e deixe a tela responsiva.",
+      "expected_output": "A rota e movida para o AuthLayout, preserva o shell publico UX e e verificada em viewport pequeno sem alterar a estrategia global de router incidentalmente.",
+      "files": []
+    }
+  ]
+}

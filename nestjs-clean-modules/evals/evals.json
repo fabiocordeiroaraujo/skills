@@ -1,0 +1,29 @@
+{
+  "skill_name": "nestjs-clean-modules",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Monte OrdersModule. CreateOrder depende de OrderRepository, PaymentGateway e Clock, todos interfaces TypeScript. PrismaOrderRepository e StripePaymentGateway ja existem. Exponha POST /orders e exporte apenas CreateOrder.",
+      "expected_output": "Modulo com tokens runtime, bindings corretos, factory ordenada, controller fino, rota e export minimo.",
+      "files": [],
+      "expectations": [
+        "Nenhuma interface apagada e usada diretamente como token runtime.",
+        "useFactory e inject possuem ordem correspondente ao construtor.",
+        "O controller apenas adapta request/response e chama CreateOrder.",
+        "Somente CreateOrder e exportado."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Nest nao resolve o argumento [1] de SendReceipt. ReceiptModule registra EmailMailerService e ReceiptRepository concretos, mas o usecase usa interfaces. Diagnostique e corrija sem adicionar @Injectable/@Inject ao core.",
+      "expected_output": "Diagnostico do token ausente e correcao no composition root com token + factory/useClass ou useExisting.",
+      "files": [],
+      "expectations": [
+        "A correcao fica no modulo NestJS.",
+        "Cada interface recebe token runtime estavel.",
+        "O caso de uso permanece uma classe TypeScript pura.",
+        "Inclui teste de composicao para prevenir regressao."
+      ]
+    }
+  ]
+}

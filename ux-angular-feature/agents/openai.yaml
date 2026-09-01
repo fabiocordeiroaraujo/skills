@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX Angular Feature"
+  short_description: "Features Angular com o padrao UX"
+  default_prompt: "Use $ux-angular-feature para implementar esta feature Haggyo sobre a base Angular/UX."

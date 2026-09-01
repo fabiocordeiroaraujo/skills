@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adapters NestJS Clean"
+  short_description: "Adaptadores Prisma e integrações por portas"
+  default_prompt: "Use $nestjs-clean-adapters para implementar os adaptadores de persistência e integração desta feature."

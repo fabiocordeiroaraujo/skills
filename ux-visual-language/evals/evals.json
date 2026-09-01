@@ -1,0 +1,17 @@
+{
+  "skill_name": "ux-visual-language",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "A tela de resumo financeiro em frontend/ ficou com cores hexadecimais e cards diferentes do restante do Haggyo. Ajuste o SCSS e o template para ficar coerente com o padrao UX sem alterar a regra de negocio.",
+      "expected_output": "A solucao inspeciona os tokens UX, troca valores arbitrarios por classes/variaveis semanticas, preserva hierarquia e acessibilidade e valida o build.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Crie a composicao visual de quatro indicadores de matricula no dashboard Angular do Haggyo, usando o estilo existente no template.",
+      "expected_output": "A solucao reutiliza grid, cards metricos, tipografia e Iconsmind do catalogo UX, sem dados/conteudo demo e sem depender apenas de cor.",
+      "files": []
+    }
+  ]
+}

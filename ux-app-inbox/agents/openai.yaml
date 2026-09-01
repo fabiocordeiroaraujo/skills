@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX App Inbox"
+  short_description: "Inbox master-detail e comunicados"
+  default_prompt: "Use $ux-app-inbox para adaptar o padrao Inbox a esta jornada de comunicacao do Haggyo."

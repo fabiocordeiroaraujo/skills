@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX UI Components"
+  short_description: "Componentes e interacoes UX"
+  default_prompt: "Use $ux-ui-components para escolher e implementar os componentes UX adequados nesta interface."

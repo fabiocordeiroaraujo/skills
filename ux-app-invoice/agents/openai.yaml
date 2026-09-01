@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX App Invoice"
+  short_description: "Documentos financeiros editaveis e imprimiveis"
+  default_prompt: "Use $ux-app-invoice para adaptar o padrao Invoice a esta jornada financeira do Haggyo."
