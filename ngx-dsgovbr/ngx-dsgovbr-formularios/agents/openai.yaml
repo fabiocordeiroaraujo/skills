@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ngx Dsgovbr Formulários"
+  short_description: "Usa campos, selects e validações GovBR"
+  default_prompt: "Use $ngx-dsgovbr-formularios para criar um formulário Angular com componentes GovBR."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ngx Dsgovbr Instalação"
+  short_description: "Configura instalação e estilos GovBR"
+  default_prompt: "Use $ngx-dsgovbr-instalacao-configuracao para configurar @serpro/ngx-dsgovbr em uma aplicação Angular."

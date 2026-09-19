@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ngx Dsgovbr Tabelas"
+  short_description: "Usa tabelas, listas e cards GovBR"
+  default_prompt: "Use $ngx-dsgovbr-tabelas-listas para montar uma tabela GovBR com paginação e ações."

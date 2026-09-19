@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ngx Dsgovbr Layout"
+  short_description: "Monta layout, header, menu e navegação"
+  default_prompt: "Use $ngx-dsgovbr-layout-navegacao para criar um layout autenticado com header, menu e breadcrumbs."

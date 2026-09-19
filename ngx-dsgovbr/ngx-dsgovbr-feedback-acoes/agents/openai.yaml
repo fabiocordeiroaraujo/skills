@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ngx Dsgovbr Feedback"
+  short_description: "Usa alertas, modais e ações GovBR"
+  default_prompt: "Use $ngx-dsgovbr-feedback-acoes para adicionar alertas, confirmação e loading GovBR."

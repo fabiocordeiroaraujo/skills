@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ngx Dsgovbr Diretivas"
+  short_description: "Aplica diretivas, pipes e serviços GovBR"
+  default_prompt: "Use $ngx-dsgovbr-diretivas-pipes-servicos para validar CPF, aplicar pipes ou usar serviços do ngx-dsgovbr."
