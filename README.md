@@ -12,8 +12,8 @@ Cada skill possui um arquivo `SKILL.md`, que define quando ela deve ser ativada,
 | [Haggyo](#haggyo) | 8 | Arquitetura e padrões UX do frontend Angular Haggyo |
 | [NestJS](#nestjs) | 5 | Clean Architecture e configuração de backends NestJS |
 | [ngx-dsgovbr](#ngx-dsgovbr) | 6 | Uso da biblioteca Angular `@serpro/ngx-dsgovbr` |
-| [Transferegov](#transferegov) | 6 | Padrões visuais e de interação específicos do Transferegov |
-| **Total** | **27** | |
+| [Transferegov](#transferegov) | 7 | Padrões visuais, de interação e de administração de dados do Transferegov |
+| **Total** | **28** | |
 
 ## Como os grupos se relacionam
 
@@ -21,7 +21,7 @@ Cada skill possui um arquivo `SKILL.md`, que define quando ela deve ser ativada,
 - As skills **Haggyo** orientam a construção do frontend do produto, desde a linguagem visual até features e fluxos completos.
 - As skills **NestJS** separam domínio, casos de uso, adaptadores e composição de módulos no backend.
 - As skills **ngx-dsgovbr** documentam como implementar interfaces Angular usando as APIs reais da biblioteca.
-- As skills **Transferegov** definem as regras de produto e apresentação. Quando a implementação usa Angular, elas normalmente são combinadas com as skills `ngx-dsgovbr` correspondentes.
+- As skills **Transferegov** definem regras de produto, apresentação e administração de dados. Em tarefas de interface Angular, elas normalmente são combinadas com as skills `ngx-dsgovbr` correspondentes.
 
 ## Skills gerais
 
@@ -93,7 +93,7 @@ As skills podem ser combinadas por tela. Uma consulta típica, por exemplo, pode
 
 ## Transferegov
 
-Conjunto que traduz o padrão visual e as convenções de interação do Transferegov em orientações aplicáveis às telas do produto. Essas skills descrevem **o padrão a seguir**; as skills `ngx-dsgovbr` descrevem **como implementá-lo com a biblioteca Angular**.
+Conjunto que traduz os padrões visuais, as convenções de interação e as normas de administração de dados do Transferegov em orientações aplicáveis ao produto. Para tarefas de interface, as skills `ngx-dsgovbr` descrevem como implementar o padrão com a biblioteca Angular.
 
 | Skill | Responsabilidade |
 | --- | --- |
@@ -103,6 +103,7 @@ Conjunto que traduz o padrão visual e as convenções de interação do Transfe
 | [`transferegov-detalhamento-dados`](transferegov/transferegov-detalhamento-dados/SKILL.md) | Padroniza visualização somente leitura, proteção de dados pessoais, UF, números, moedas, alinhamentos e tags de situação. |
 | [`transferegov-cores-containers`](transferegov/transferegov-cores-containers/SKILL.md) | Define cores permitidas, superfícies, containers, espaçamento responsivo, contraste e limites de customização visual. |
 | [`transferegov-acoes-iconografia`](transferegov/transferegov-acoes-iconografia/SKILL.md) | Mantém o catálogo de verbos, ícones Font Awesome e posicionamento de ações em botões, tabelas, menus e formulários. |
+| [`transferegov-administracao-dados-v1-0`](transferegov/transferegov-administracao-dados-v1-0/SKILL.md) | Aplica as normas de modelagem, nomenclatura de objetos e colunas, auditoria, concorrência, scripts SQL, usuários e privilégios da versão 1.0 do manual de administração de dados. |
 
 Exemplos de composição:
 
